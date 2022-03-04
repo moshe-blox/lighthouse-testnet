@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  testnet:
+    build: .
+    volumes:
+      - ./scripts:/scripts
+      - ./data/lighthouse:/root/.lighthouse
+    ports:
+      - 8001:8001
+      - 8002:8002
+      - 8003:8003
+      - 8004:8004
+    init: true
