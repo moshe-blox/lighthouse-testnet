@@ -1,10 +1,9 @@
 version: '3'
 
 services:
-  testnet:
+  lighthouse:
     build: .
     volumes:
-      - ./scripts:/scripts
       - ./data/lighthouse:/root/.lighthouse
     ports:
       - 8001:8001
